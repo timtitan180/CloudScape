@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/anotherpage.css" type="text/css"/>
+    <title>Document</title>
+    <style>
+         body {
+        font-family: sans-serif;
+        background-color: rgb(11, 186, 239);
+        }
+
+        ul {
+            text-align: right;
+            border-bottom:1px solid white;
+            position: fixed;
+            width:100%;
+            height: 30px;
+            list-style-type: none;
+            margin: 0;
+            padding-top:5px;
+            display: inline;
+            padding-bottom:50px;
+            box-shadow: 0px 7px 10px  #ece9e9;
+        }
+
+        ul li {
+          margin-top:20px;
+            margin-right:10px;
+            display: inline;
+            text-decoration: none;
+            float: right;
+        }
+
+        li:nth-child(1) {
+            margin-right: 50px;
+        }
+
+        a {
+            margin-right:2px;
+            text-decoration: none;
+            font-weight: bold;
+            color:white;
+        }
+
+        a:hover {
+            color:rgba(0, 100, 250, 0.3)
+        }
+
+        .header {
+      width:100%;
+      height:10px;
+      margin-bottom:20px;
+  }
+
+        form {
+            background-color: white;;
+            height:270px;
+            width: 360px;
+            margin-left:600px;
+            margin-top:15%;
+            border-radius:5px;
+            box-shadow: 0 4px 6px gray;
+        }
+
+        label {
+            margin-left:15px;
+            color:gray;
+            font-weight: lighter;
+        }
+        .col {
+  margin-left: 30px;
+}
+
+input {
+    border-radius: 4px;
+    border:1px solid gray;
+    margin-left:60px;
+    margin-top: 20px;
+    padding-top:10px;
+    width: 140px;
+    margin-bottom:5px;
+}
+
+textarea {
+    margin-top:20px;
+    margin-left:80px;
+    border-radius:4px;
+}
+
+.submission-alert {
+    position: absolute;
+    margin-top:100px;
+    margin-left:38.5%;
+    height: 30px;
+    width:400px;
+    padding-bottom:10px;
+    box-shadow: 0 6 6 gray blur;;
+  border-radius: 4px;
+  text-align: center;
+  background-color: white;
+  visibility: hidden;
+  margin-bottom:15px;
+
+}
+
+#submission-texts {
+    color:gray;
+}
+
+#checkmark {
+    margin-top:10px;
+    float:left;
+    height:20px;
+    width:20px;
+}
+
+#sendButton:hover {
+    opacity: 10%;
+}
+
+
+button {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:35px;
+    width:60px;
+    margin-top:30px;
+    margin-left:150px;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img style="position:absolute;" src="https://img.icons8.com/cotton/64/000000/cloud.png"/>
+        <h2 style="margin-left:70px;position:absolute;color:white">CloudScape</h2>
+      <div class="links">
+    <ul>
+        <li><a href="C:/Users/timtu/Desktop/JS_SBA/html/table.html">View Table</a></li>
+        <li><a href="C:/Users/timtu/Desktop/JS_SBA/html/signup.html">Register</a></li>
+      </ul>
+    </div>
+</header>
+<div class="submission-alert"><span><img id="checkmark" src="C:/Users/timtu/Desktop/JS_SBA/images/checkmark.png"/></span><p id="submission-texts">Your response has been submitted. Thank you!</p></div>
+    <h3 style="color:white;position: absolute;margin-top:150px;margin-left:720px;">Contact Us</h3>
+    <form>
+    <div class="form-group">
+      <label>Email address</label>
+      <input type="email" class="form-control" required placeholder="email@example.com">
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <textarea class="form-control" rows="7" required placeholder="Write your message"></textarea>
+    </div>
+    <div style="display:block">
+    <button id="sendButton" type="submit" style="display:inline;background-color:teal;border:0px;color:white;">Send</button>
+    </div>
+</form>
+</body>
+<script>
+    var sendButton = document.querySelector("button");
+
+    sendButton.addEventListener("click",function(event){
+    event.preventDefault();
+    document.querySelector(".submission-alert").style.visibility = "visible";
+    });
+</script>
+</html>
