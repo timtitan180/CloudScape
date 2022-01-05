@@ -3,7 +3,7 @@ A Form Validation, and Contact Form using HTML,CSS and Javascript to showcase my
 
 
 <div class="image-container>
-  <img src="C:\Users\timtu\MyPortfolio\public\images\SimpleForm.png"/>
+  <img src="C:\Users\timtu\Desktop\MyPortfolio\public\images\SimpleForm.png"/>
   </div>
   <div>
   <img src=""/>
